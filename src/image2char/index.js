@@ -33,7 +33,7 @@ export default async function (sourceImage, { width = 50, definition = 1 }, call
   }
   // canvas加载图片
   ctx.drawImage(image, 0, 0, canvasWidth, canvasHeight)
-  // 加载像素信息
+  // 加载像素信息s
   let pixelData = ctx.getImageData(0, 0, canvasWidth, canvasHeight).data
   console.log(pixelData)
   return new Promise((resolve, reject) => {
